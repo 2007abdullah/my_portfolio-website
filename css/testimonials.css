@@ -1,0 +1,30 @@
+/* =========================================================
+   Testimonials
+   ========================================================= */
+.testimonials{ background: var(--bg); }
+.testimonial-grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1.8rem;
+}
+.testimonial-card{
+  background:#fff;
+  border-radius: var(--radius-lg);
+  padding: 2.2rem;
+  box-shadow: var(--shadow);
+  position:relative;
+}
+.quote-icon{ color: var(--green-light); font-size:2rem; margin-bottom:1rem; }
+.testimonial-card p{ color: var(--text); font-size:1rem; margin-bottom:1.4rem; font-style:italic; }
+.testimonial-author{ display:flex; align-items:center; gap:.8rem; }
+.author-avatar{
+  width:42px; height:42px;
+  border-radius:50%;
+  background: var(--green-light);
+  color: var(--green-dark);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700;
+}
+.testimonial-author strong{ display:block; font-size:.92rem; }
+.testimonial-author span{ font-size:.78rem; color: var(--text-light); }
+.testimonial-note{ text-align:center; margin-top:2rem; font-size:.82rem; color: var(--text-light); }

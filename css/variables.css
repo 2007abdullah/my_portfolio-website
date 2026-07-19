@@ -1,0 +1,26 @@
+/* =========================================================
+   Design tokens — colors, radii, shadows, fonts
+   ========================================================= */
+:root{
+  --bg: #f3f6fb;
+  --white: #ffffff;
+  --green: #22c55e;
+  --green-dark: #16a34a;
+  --green-light: #e8faf0;
+  --coral: #fb6a5a;
+  --navy: #14172a;
+  --navy-soft: #1d2138;
+  --text: #1f2430;
+  --text-light: #6b7280;
+  --border: #e6e9f2;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+
+  --shadow: 0 15px 40px rgba(23, 26, 43, .08);
+  --shadow-lg: 0 25px 60px rgba(23, 26, 43, .14);
+
+  --ff-heading: 'Poppins', sans-serif;
+  --ff-body: 'Inter', sans-serif;
+}

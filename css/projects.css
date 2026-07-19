@@ -1,0 +1,30 @@
+/* =========================================================
+   Projects
+   ========================================================= */
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+.project-card{
+  background:#fff;
+  border-radius: var(--radius-lg);
+  overflow:hidden;
+  box-shadow: var(--shadow);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.project-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.project-media{
+  height:160px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:2.6rem;
+  color:#fff;
+}
+.proj-1{ background: linear-gradient(135deg, #22c55e, #0ea5a4); }
+.proj-2{ background: linear-gradient(135deg, #fb6a5a, #f59e0b); }
+.proj-3{ background: linear-gradient(135deg, #6366f1, #22c55e); }
+.project-body{ padding: 1.6rem; }
+.project-body h3{ font-size:1.15rem; margin-bottom:.5rem; }
+.project-body p{ color: var(--text-light); font-size:.9rem; margin-bottom:1rem; }
+.tag-row{ display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1.3rem; }
+.project-links{ display:flex; gap:.7rem; flex-wrap:wrap; }

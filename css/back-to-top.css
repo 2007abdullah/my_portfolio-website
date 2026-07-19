@@ -1,0 +1,17 @@
+
+.back-to-top{
+  position:fixed;
+  bottom:28px; right:28px;
+  width:46px; height:46px;
+  border-radius:50%;
+  background: var(--green);
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: var(--shadow);
+  opacity:0; visibility:hidden;
+  transform: translateY(10px);
+  transition: all .3s ease;
+  z-index: 999;
+}
+.back-to-top.show{ opacity:1; visibility:visible; transform:translateY(0); }
+.back-to-top:hover{ background: var(--green-dark); }

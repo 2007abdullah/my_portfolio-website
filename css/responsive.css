@@ -1,0 +1,41 @@
+/* =========================================================
+   Responsive overrides
+   (Loaded last in index.html so these rules win the cascade)
+   ========================================================= */
+
+@media (max-width: 960px){
+  .hero-inner, .about-inner, .contact-inner{ grid-template-columns:1fr; }
+  .about-graphic{ order:2; max-width:320px; margin:0 auto; }
+  .about-text{ order:1; }
+  .skills-grid{ grid-template-columns:1fr; }
+  .projects-grid{ grid-template-columns: repeat(2, 1fr); }
+  .services-grid{ grid-template-columns: repeat(2, 1fr); }
+  .testimonial-grid{ grid-template-columns:1fr; }
+  .form-row{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 768px){
+  .nav-links, .nav-cta{ display:none; }
+  .hamburger{ display:flex; }
+  .nav-links.open{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:76px; left:0; right:0;
+    background:#fff;
+    padding: 1.5rem 24px;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+  }
+  .hero{ padding: 140px 0 80px; text-align:center; }
+  .hero-actions, .hero-socials{ justify-content:center; }
+  .hero-desc{ margin-left:auto; margin-right:auto; }
+  .hero-shape{ display:none; }
+  .projects-grid{ grid-template-columns: 1fr; }
+  .services-grid{ grid-template-columns: 1fr; }
+  .section-head{ text-align:center; }
+  .section-title::after{ margin-left:auto; margin-right:auto; }
+  .about-text{ text-align:center; }
+  .pill-group{ justify-content:center; }
+  .contact-inner{ padding: 1.8rem; }
+}
