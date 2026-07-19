@@ -1,7 +1,4 @@
-/* =========================================================
-   Responsive overrides
-   (Loaded last in index.html so these rules win the cascade)
-   ========================================================= */
+
 
 @media (max-width: 960px){
   .hero-inner, .about-inner, .contact-inner{ grid-template-columns:1fr; }
@@ -27,6 +24,7 @@
     gap: 1rem;
     box-shadow: var(--shadow);
   }
+  
   .hero{ padding: 140px 0 80px; text-align:center; }
   .hero-actions, .hero-socials{ justify-content:center; }
   .hero-desc{ margin-left:auto; margin-right:auto; }
