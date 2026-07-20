@@ -13,17 +13,21 @@
   display:flex; align-items:center; justify-content:center;
   box-shadow: var(--shadow-lg);
 }
-.about-avatar{
-  width:60%; aspect-ratio:1;
-  border-radius:50%;
-  background: rgba(255,255,255,.15);
-  border: 3px solid rgba(255,255,255,.6);
-  color:#fff;
-  font-family: var(--ff-heading);
-  font-weight:700;
-  font-size:3rem;
-  display:flex; align-items:center; justify-content:center;
+.about-frame{
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  overflow: hidden; /* IMPORTANT */
+  box-shadow: var(--shadow-lg);
 }
+
+/* Image full fit */
+.about-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills entire frame */
+  display: block;
+}
+
 .about-badge{
   position:absolute;
   bottom:-22px; right:-18px;
@@ -41,4 +45,10 @@
 .about-text p{
   color: var(--text-light);
   margin-bottom:1.1rem;
+}
+
+@media (max-width: 768px){
+  .about-inner{
+    grid-template-columns: 1fr;
+  }
 }
