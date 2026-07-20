@@ -30,22 +30,60 @@
 
 .about-badge{
   position:absolute;
-  bottom:-22px; right:-18px;
-  background:#fff;
-  border-radius: var(--radius-md);
-  padding: 14px 20px;
-  box-shadow: var(--shadow);
-  display:flex;
-  flex-direction:column;
-  line-height:1.3;
+  bottom:20px;
+  right:20px;
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+
+  padding: 12px 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  color: #fff;
 }
-.about-badge strong{ color:var(--green-dark); font-size:1.2rem; }
-.about-badge span{ font-size:.78rem; color:var(--text-light); }
+
+.about-badge strong{
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.about-badge span{
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+.about-frame{
+  overflow: hidden;
+  position: relative;
+}
+
+.about-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about-frame:hover .about-img{
+  transform: scale(1.08);
+}
+.about-frame::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
 
 .about-text p{
   color: var(--text-light);
   margin-bottom:1.1rem;
 }
+
+
+
 
 @media (max-width: 768px){
   .about-inner{
