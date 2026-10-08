@@ -12,15 +12,11 @@ export function initBackToTop() {
 }
 
 /**
- * Placeholder handler for the "Download CV" button until a real
- * CV file is added to /assets and linked in partials/hero.html.
+ * Enables the CV download button when a resume file is linked in the hero section.
  */
 export function initDownloadCv() {
   const cvBtn = document.getElementById('downloadCv');
   if (!cvBtn) return;
 
-  cvBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('Add your CV file to the assets folder and link it here (e.g. assets/Abdullah-Hayat-CV.pdf).');
-  });
+  cvBtn.setAttribute('download', 'Abdullah-Hayat-Resume.pdf');
 }
